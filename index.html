@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNT Navigator - UX Case Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Optional: Keep the visual header for impact -->
+    <header class="page-header">
+        <div class="container fade-in-element">
+            <h1>UNT Navigator</h1>
+            <p class="subtitle">A Mobile App for Campus Navigation & Scheduling</p>
+            <div class="header-mockups">
+				<img src="final-classnav1.png" alt="Final UNT Navigator screen - Class Schedule" class="img-mockup-header">
+                <img src="final-classnav3.png" alt="Final UNT Navigator screen - Turn-by-turn Navigation" class="img-mockup-header">
+                <img src="final-nearme1.png" alt="Final UNT Navigator screen - Near Me List with Filters" class="img-mockup-header">
+                <img src="key1.png" alt="Key UNT Navigator screen 1" class="img-mockup-header">
+                <img src="key2.png" alt="Key UNT Navigator screen 2" class="img-mockup-header">
+                <img src="key3.png" alt="Key UNT Navigator screen 3" class="img-mockup-header">
+				<img src="final-event1.png" alt="Final UNT Navigator screen - Events List" class="img-mockup-header">
+                <img src="final-event2.png" alt="Final UNT Navigator screen - Event Details" class="img-mockup-header">
+                <img src="final-delete1.png" alt="Final UNT Navigator screen - Settings" class="img-mockup-header">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. Project Overview -->
+        <section id="project-overview" class="content-section fade-in-element">
+            <h2>1. Project Overview</h2>
+            <div class="section-columns">
+                <div class="column-text">
+                    <h3>Project Title</h3>
+                    <p>UNT Navigator</p>
+                    <h3>One-line Description</h3>
+                    <p>An integrated mobile solution designed to help University of North Texas students easily find campus locations, navigate to classes, and discover events.</p>
+                    <h3>My Role in the Team</h3>
+                    <p>UX Design Project Group Member (Responsible for aspects of research, ideation, wireframing, prototyping, and usability testing alongside team members).</p>
+                    <p><em>[Optional: Briefly mention any specific areas you led or focused on, e.g., "I particularly focused on the user flow for class navigation and the low-fidelity wireframing."]</em></p>
+                </div>
+                <div class="column-details">
+                    <h3>Duration</h3>
+                    <p>14 Weeks</p>
+                    <h3>Tools Used</h3>
+                    <ul>
+                        <li>Figma (Design, Prototyping)</li>
+                        <li>Google Docs (Ideation, UX Interview Documentation, Design System</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Problem Statement -->
+        <section id="problem-statement" class="content-section fade-in-element">
+            <h2>2. Problem Statement</h2>
+            <h3>What user problem or opportunity was being addressed?</h3>
+            <p>Navigating a large university campus like the University of North Texas (UNT) presents significant hurdles, particularly for new and visiting students. Current methods often involve static PDF maps, general-purpose navigation apps lacking campus-specific details (like building entrances or room numbers), or relying on asking others for directions.</p>
+             <figure class="image-container-fullwidth" style="max-width: 600px;">
+                 <img src="problem-visual.jpg" alt="Visual representing student navigation frustration" class="img-general">
+                 <figcaption>Students often feel lost or stressed when trying to find locations on a large campus.</figcaption>
+             </figure>
+            <h3>Why does it matter?</h3>
+            <p>This lack of effective navigation tools leads to:</p>
+            <ul>
+                <li>Increased stress and anxiety, especially before classes or important appointments.</li>
+                <li>Students being late for classes, meetings, or exams.</li>
+                <li>Difficulty discovering and accessing valuable campus resources, services, and events.</li>
+                <li>A less welcoming and potentially overwhelming initial experience for new members of the UNT community.</li>
+            </ul>
+            <p>Our initial research confirmed these pain points were common, highlighting an opportunity to create a dedicated, integrated solution.</p>
+        </section>
+
+        <!-- 3. Goals & Success Metrics -->
+        <section id="goals-metrics" class="content-section fade-in-element">
+            <h2>3. Goals & Success Metrics</h2>
+            <h3>What did success look like?</h3>
+            <p>The primary goal was to design an intuitive, integrated mobile application that helps UNT students:</p>
+            <ul>
+                <li>Easily find campus buildings, specific rooms, and points of interest.</li>
+                <li>Seamlessly navigate to their scheduled classes by integrating with their Canvas schedule.</li>
+                <li>Discover relevant campus events and resources happening near them.</li>
+                <li>Reduce the stress and time associated with campus navigation.</li>
+            </ul>
+            <h3>Any measurable outcomes or hypotheses?</h3>
+            <p>We hypothesized that a dedicated app with these features would lead to:</p>
+            <ul>
+                <li><strong>[Example Metric 1:]</strong> A reduction in student stress levels related to finding classes.</li>
+                <li><strong>[Example Metric 2:]</strong> Increased user confidence in navigating the campus independently.</li>
+                <li><strong>[Example Metric 3:]</strong> Faster task completion times for finding a specific building or event compared to using existing methods.</li>
+                <li><strong>[Example Metric 4:]</strong> High user satisfaction scores (e.g., scoring >4/5 on a satisfaction scale) for core features like Canvas integration and navigation.</li>
+            </ul>
+        </section>
+
+        <!-- 4. Research Process (Weeks 4 & 5: Understanding Users) -->
+        <section id="research-process" class="content-section fade-in-element">
+            <h2>4. Research Process</h2>
+            <p>To ground our design decisions in real user needs, we conducted user research primarily through interviews with current UNT students. Our goal was to understand their existing navigation habits, how they managed their schedules, pain points they encountered on campus, and features they desired in a potential solution.</p>
+
+            <h3>User Personas</h3>
+            <p>Based on our research and our experience as college students, we developed a user persona to represent typical UNT students who would benefit from the app. This helped us maintain focus on user needs throughout the design process.</p>
+             <figure class="image-container-fullwidth">
+                 <img src="persona.png" alt="User Persona representing a typical UNT student user" class="img-general">
+                 <figcaption>User Persona: "Billy Joe", representing a freshman struggling with campus navigation and scheduling.</figcaption>
+             </figure>
+
+            <h3>Empathy Maps & Journey Maps</h3>
+             <p>We utilized journey maps to visualize the steps, thoughts, and feelings of a student trying to complete a key task, such as finding a classroom for the first time. This helped identify specific pain points and opportunities for improvement.</p>
+             <p><em>[Optional: Briefly mention Empathy Maps if created - "Empathy maps helped us delve deeper into what students might be thinking, feeling, saying, and doing regarding campus navigation."]</em></p>
+             <figure class="image-container-fullwidth">
+                 <img src="journey-map.png" alt="User Journey Map depicting finding a class" class="img-general">
+                 <figcaption>User Journey Map illustrating the process and pain points of finding a new class location.</figcaption>
+             </figure>
+
+             <h3>User Stories</h3>
+             <p>We formulated user stories to capture functional requirements from the user's perspective, such as:</p>
+             <ul>
+                <li><em>"As a new student, I want to connect my Canvas account so that my class schedule automatically appears in the app with locations."</em></li>
+                <li><em>"As a student running late, I want to quickly get walking directions to my next class building so that I can arrive on time."</em></li>
+                <li><em>"As a student looking for food, I want to see nearby dining options and their hours so that I can decide where to eat."</em></li>
+				<li><em>"As a student who is bored on campus, I want to conveniently see events that are happening around me."</em></li>
+             </ul>
+             <p><em>[Add 1-2 more key user stories if applicable]</em></p>
+
+            <h3>Key User Research Insights</h3>
+            <ul>
+                <li>A strong desire for **direct integration with the Canvas schedule** to automatically link classes to map locations was frequently expressed.</li>
+                <li>Significant frustration exists regarding the **lack of detail in general map applications** (like Google Maps or Apple Maps) for specific UNT building entrances, room numbers, and pedestrian pathways.</li>
+                <li>Finding **specific rooms within large, unfamiliar buildings** was a common challenge.</li>
+                <li>Students showed interest in a **centralized, easily accessible hub for campus event information**.</li>
+                <li>Ease of use and speed were critical; students often need directions quickly between classes.</li>
+            </ul>
+        </section>
+
+        <!-- 5. Ideation & Planning (Week 3: Design Sprints & Brainstorming) -->
+        <section id="ideation-planning" class="content-section fade-in-element">
+            <h2>5. Ideation & Planning</h2>
+            <h3>How did you brainstorm?</h3>
+            <p>We initiated the ideation phase using rapid sketching techniques, specifically the **Crazy 8s exercise**. Each team member sketched eight distinct ideas or variations for key app screens (like the map view, class list, event discovery) in eight minutes. This allowed us to quickly generate a wide range of possibilities without initial judgment.</p>
+            <p>Following the sketching, we presented our ideas, discussed the pros and cons, and used checkmark voting to identify the most promising concepts or elements to carry forward into wireframing.</p>
+
+            <h3>Initial Sketches (Crazy 8s Examples)</h3>
+            <div class="image-gallery-scrollable">
+                 <img src="crazy8s-1.jpeg" alt="Crazy 8 sketch example 1 - Notifications/Map" class="img-gallery-item">
+                 <img src="crazy8s-2.jpeg" alt="Crazy 8 sketch example 2 - Login/Map Ideas" class="img-gallery-item">
+                 <img src="crazy8s-3.jpeg" alt="Crazy 8 sketch example 3 - Events Ideas" class="img-gallery-item">
+                 <img src="crazy8s-5.jpeg" alt="Crazy 8 sketch example 5 - Map/Search Ideas" class="img-gallery-item">
+            </div>
+            <p class="caption">Examples of Crazy 8 sketches exploring different UI solutions for core app features.</p>
+
+            <h3>Key Ideas Generated and Narrowed Down</h3>
+            <p>Our brainstorming generated ideas around:</p>
+            <ul>
+                <li>Various map interaction models.</li>
+                <li>Different ways to display class schedules (list view, calendar view, integrated map pins).</li>
+                <li>Filtering and categorization options for events and points of interest.</li>
+                <li>Integration points (Canvas login, calendar sync).</li>
+                <li>Bottom navigation structure vs. hamburger menu.</li>
+            </ul>
+            <p>Through discussion and voting, we prioritized a bottom navigation structure for core features (Map, Near Me, Classes, Events, Settings), a **list view for classes** with easy access to navigation, and robust **filtering options** for discovery features.</p>
+        </section>
+
+        <!-- 6. User Flow & Storyboarding (Week 6) -->
+        <section id="user-flow-storyboarding" class="content-section fade-in-element">
+            <h2>6. Storyboarding</h2>
+             <h3>Paper Prototyping</h3>
+            <p>We mapped out the primary user journeys to ensure a logical and efficient path through the app. This image illustrates three different users flows in our app.</p>
+            <!-- Placeholder: Replace with Site Map or User Flow Diagram -->
+            <figure class="image-container-fullwidth">
+                 <img src="paper-prototype.jpg" alt="Site Map or User Flow diagram for UNT Navigator" class="img-general">
+                 <figcaption>User Flow Diagram illustrating key pathways like login, class finding, and navigation.</figcaption>
+            </figure>
+
+             <h3>Storyboards / Task Flows</h3>
+             <p>To better visualize the user experience for key tasks, we created storyboards. These helped illustrate the sequence of screens and interactions required to achieve specific goals within the app.</p> <!-- Updated paragraph -->
+
+             <!-- **** ADDED IMAGE GALLERY HERE **** -->
+             <div class="image-gallery-scrollable">
+                 <img src="storyboard1.jpg" alt="Storyboard/Task Flow Example 1 - Finding a Class" class="img-gallery-item img-gallery-item-small">
+                 <img src="storyboard2.jpg" alt="Storyboard/Task Flow Example 2 - Finding Nearby Dining" class="img-gallery-item img-gallery-item-small">
+                 <img src="storyboard3.jpg" alt="Storyboard/Task Flow Example 3 - Discovering an Event" class="img-gallery-item img-gallery-item-small">
+             </div>
+             <p class="caption">Visual examples of key task flows or storyboards.</p> <!-- Added caption -->
+
+
+            <h3>Description of Core Interactions</h3>
+            <p>Key interactions were designed to be straightforward:</p>
+            <ul>
+                <li><strong>Navigation Initiation:</strong> Clearly labeled buttons ("Start Navigation", "Get Directions") trigger the turn-by-turn map view.</li>
+                <li><strong>Filtering:</strong> Chip-style filter buttons allow users to quickly narrow down lists in 'Near Me' and 'Events'.</li>
+                <li><strong>Canvas Sync:</strong> A simple, guided process prompts users to connect their UNT account via SSO upon first use or through settings.</li>
+                <li><strong>Bottom Navigation:</strong> Provides persistent access to the five main sections of the app.</li>
+            </ul>
+        </section>
+
+        <!-- 7. Information Architecture (Week 7) -->
+        <section id="information-architecture" class="content-section fade-in-element">
+            <h2>7. Information Architecture</h2>
+            <h3>Information Architecture (Site Map)</h3>
+            <p>We developed a site map to define the overall structure and hierarchy of the app's content and features. The goal was to create a clear and predictable organization, making it easy for users to find what they need.</p>
+            <figure class="image-container-fullwidth">
+                 <img src="sitemap-userflow.png" alt="Site Map illustrating the app's structure" class="img-general">
+                 <!-- Consider replacing this image with one that is purely a Site Map if available, or keep if it combines both well enough -->
+                 <figcaption>Site Map illustrating the main sections and content hierarchy of UNT Navigator.</figcaption>
+            </figure>
+
+            <h3>Discussion of How Content Was Organized</h3>
+            <p>The structure is based around five core pillars accessible via the bottom navigation bar:</p>
+            <ul>
+                <li><strong>Map:</strong> The central hub for spatial orientation, searching, and initiating navigation.</li>
+                <li><strong>Near Me:</strong> Focused on discovering points of interest (dining, services, academic buildings, etc.) relative to the user's current location.</li>
+                <li><strong>Classes:</strong> Dedicated to the user's personal class schedule, linked directly from Canvas.</li>
+                <li><strong>Events:</strong> A curated list of official campus events, filterable and searchable.</li>
+                <li><strong>Settings:</strong> Houses account management, Canvas integration status, appearance preferences, and support information.</li>
+            </ul>
+            <p>This task-oriented structure allows users to quickly jump to the section most relevant to their immediate goal (e.g., finding a class vs. finding lunch).</p>
+        </section>
+
+        <!-- 8. Low-Fidelity Prototyping (Week 8) -->
+        <section id="low-fidelity-prototyping" class="content-section fade-in-element">
+            <h2>8. Low-Fidelity Prototyping</h2>
+            <h3>Low-Fidelity Wireframes</h3>
+            <p>We translated our prioritized ideas and structural decisions into low-fidelity wireframes using Figma. These focused on layout, content placement, and core functionality without the distraction of visual styling (colors, fonts, imagery). This allowed for rapid iteration and feedback on the fundamental usability of the design.</p>
+             <div class="image-gallery-scrollable">
+                 <img src="lowfi-login.png" alt="Low-fidelity wireframe - Login Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-account.png" alt="Low-fidelity wireframe - Create Account Screen " class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-map.png" alt="Low-fidelity wireframe - Main Map Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-nearme.png" alt="Low-fidelity wireframe - Near Me Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-navigate.png" alt="Low-fidelity wireframe - Active Navigation Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-classes.png" alt="Low-fidelity wireframe - Class List Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-addclass.png" alt="Low-fidelity wireframe - Add a Class Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-events.png" alt="Low-fidelity wireframe - Events List Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-eventdetails.png" alt="Low-fidelity wireframe - Event Details Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-settings.png" alt="Low-fidelity wireframe - Settings Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-linkaccount.png" alt="Low-fidelity wireframe - Canvas Integration Screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="lowfi-accountsettings.png" alt="Low-fidelity wireframe - Account Settings Screen" class="img-gallery-item img-mockup-gallery">
+             </div>
+             <p class="caption">Gallery of low-fidelity wireframes for key screens.</p>
+
+            <h3>Rationale Behind Layout Decisions</h3>
+            <ul>
+                <li><strong>Bottom Navigation:</strong> Chosen for reachability and persistent access to primary sections, common in mobile apps.</li>
+                <li><strong>Card-Based Lists:</strong> Used for Classes, Events, and Near Me results to provide clear, tappable targets and organized information chunks.</li>
+                <li><strong>Prominent Search Bar (Map):</strong> Placed at the top for easy access, a standard convention for map interfaces.</li>
+                <li><strong>Clear Call-to-Action Buttons:</strong> Buttons like "Navigate," "Add Class," "Link Canvas," were made distinct and clearly labeled.</li>
+                <li><strong>Standard Form Layouts:</strong> Used familiar top-aligned labels and input fields for login, account creation, and adding items.</li>
+            </ul>
+            <p>Feedback on these wireframes helped refine the flow and ensure core elements were present before moving to visual design.</p>
+        </section>
+
+        <!-- 9. Usability (Week 9: Heuristics) -->
+        <section id="usability-heuristics" class="content-section fade-in-element">
+             <h2>9. Usability Considerations (Heuristics)</h2>
+             <p>Throughout the design process, we aimed to adhere to established usability principles to create an effective and user-friendly experience. Here are a few examples based on Nielsen's Heuristics:</p>
+
+             <div class="heuristic-item">
+                 <h4>1. Visibility of System Status</h4>
+                 <p><strong>How it's reflected:</strong> When navigating, the app shows the current step, estimated time remaining, and the route on the map. When Canvas is connected, the settings screen clearly indicates the connection status. Loading states would be used for data fetching.</p>
+                 <p><strong>Why it's important:</strong> Keeps users informed about what's happening, reducing uncertainty and building trust.</p>
+             </div>
+
+             <div class="heuristic-item">
+                 <h4>2. Match Between System and the Real World</h4>
+                 <p><strong>How it's reflected:</strong> Uses familiar campus building names and standard map conventions. Icons like a graduation cap for 'Classes' or a calendar for 'Events' leverage common associations. Language used is straightforward and avoids technical jargon.</p>
+                 <p><strong>Why it's important:</strong> Makes the interface feel intuitive and easier to learn because it aligns with the user's existing mental models and language.</p>
+             </div>
+
+             <div class="heuristic-item">
+                 <h4>3. User Control and Freedom</h4>
+                 <p><strong>How it's reflected:</strong> Users can easily cancel navigation, go back from any screen using standard back buttons/gestures, disconnect their Canvas account, and log out. Clear confirmation dialogues are used for destructive actions like deleting an account.</p>
+                 <p><strong>Why it's important:</strong> Allows users to easily undo mistakes or change their minds, fostering a sense of confidence and exploration without fear of irreversible consequences.</p>
+             </div>
+
+             <div class="heuristic-item">
+                 <h4>4. Consistency and Standards</h4>
+                 <p><strong>How it's reflected:</strong> Uses a consistent color scheme, typography, and button styles throughout the app (defined in the Design System). The bottom navigation remains persistent. Actions like tapping list items to view details are consistent across sections.</p>
+                 <p><strong>Why it's important:</strong> Reduces learning load; users don't have to wonder whether different words, situations, or actions mean the same thing in different contexts.</p>
+             </div>
+
+             <div class="heuristic-item">
+                 <h4>5. Aesthetic and Minimalist Design</h4>
+                 <p><strong>How it's reflected:</strong> Focused on presenting essential information clearly. Avoided cluttering screens with irrelevant or rarely needed information. Used whitespace effectively to separate content blocks and improve readability.</p>
+                 <p><strong>Why it's important:</strong> Ensures that the interface focuses on the user's primary goals without unnecessary distractions, improving task efficiency and visual appeal.</p>
+             </div>
+              <p><em>[Note: Review these examples and adjust them to accurately reflect your design. You might choose 3-5 key heuristics that were most relevant.]</em></p>
+        </section>
+
+        <!-- Usability Testing & Iteration (Moved from original #testing section) -->
+        <section id="testing-iteration" class="content-section fade-in-element">
+            <h2>Usability Testing & Iteration</h2>
+            <p>We conducted usability tests with UNT students using the high-fidelity prototype created in Figma. Participants were given specific tasks (e.g., "Find your CSCE 1030 class and start navigation," "Find a place to eat near the Union," "Check upcoming events") and asked to think aloud as they interacted with the prototype.</p>
+            <div class="insights-box">
+                <h3>💡 Key Testing Insights & Actions Taken 💡</h3>
+                <ul>
+                     <li><strong>Insight:</strong> While the concept was well-received, some users were initially unsure if the app was solely for classes or broader campus use. <br/><strong>Action:</strong> Improved onboarding screens and introductory text to clarify the app's full scope (navigation, events, POIs, etc.).</li>
+                    <li><strong>Insight:</strong> The <strong>Canvas integration was highly valued</strong>, especially by newer students, confirming its importance. <br/><strong>Action:</strong> Ensured the Canvas linking process was prominent and easy to find in settings.</li>
+                    <li><strong>Insight:</strong> Users requested more <strong>granular filters</strong> for "Near Me" (e.g., specific services, types of food) and "Events" (e.g., by date, category, sponsoring organization). <br/><strong>Action:</strong> Added more filter options and potentially a dedicated filter interface for these sections in future iterations (as shown in the 'Near Me' example below).</li>
+                    <li><strong>Insight:</strong> Some map touch targets (like small building icons) needed adjustment for easier interaction on mobile screens. <br/><strong>Action:</strong> Increased the tappable area size around key map elements.</li>
+                    <li><strong>Insight:</strong> Minor confusion arose around the meaning of specific icons used in the initial high-fidelity designs. <br/><strong>Action:</strong> Revised icons based on feedback, opting for more universally understood symbols or adding text labels where necessary.</li>
+                </ul>
+            </div>
+
+            <h3>Iteration Example: Refining 'Near Me' Filters</h3>
+            <p>A key piece of feedback was the desire to filter the "Near Me" list more effectively. Initially, it was just a list. Based on testing, we introduced filter chips.</p>
+             <div class="comparison-container">
+                 <figure class="comparison-item">
+                     <img src="iteration-nearme-before.png" alt="Near Me screen before filters" class="img-comparison img-mockup-comparison">
+                     <figcaption><strong>Before:</strong> Simple list of nearby locations without filtering capability.</figcaption>
+                 </figure>
+                 <figure class="comparison-item">
+                     <img src="iteration-nearme-after.png" alt="Near Me screen after adding filters" class="img-comparison img-mockup-comparison">
+                     <figcaption><strong>After:</strong> Filter chip buttons added at the top for easy discovery and sorting.</figcaption>
+                 </figure>
+             </div>
+             <!-- Add more comparison examples if you have them (e.g., icon changes, flow adjustments) -->
+             <p>This iterative process of prototyping, testing, and refining was crucial for improving the usability and effectiveness of the final design.</p>
+        </section>
+
+        <!-- 10. High-Fidelity UI Design (Weeks 11 & 12) -->
+        <section id="high-fidelity-design" class="content-section fade-in-element">
+            <h2>10. High-Fidelity UI Design</h2>
+            <p>The low-fidelity wireframes and usability testing insights guided the development of the high-fidelity user interface. We applied a consistent visual style based on UNT's branding while prioritizing clarity and ease of use.</p>
+
+            <h3>Design System & Branding</h3>
+            <p>A basic design system was established in Figma to ensure consistency across all screens. Key elements included:</p>
+            <ul>
+                <li><strong>Colors:</strong> Primarily used UNT Green (`#00853E`) for calls to action and branding accents, combined with neutral grays, black, and white for text, backgrounds, and UI elements. Secondary colors were used sparingly for status indicators or specific components.</li>
+                <li><strong>Typography:</strong> Employed the 'Inter' font family for its readability on digital screens, using different weights and sizes to establish visual hierarchy.</li>
+                <li><strong>Icons:</strong> Selected clear, recognizable icons, primarily using a filled style for clarity.</li>
+                <li><strong>Components:</strong> Created reusable components for buttons, cards, list items, and navigation elements.</li>
+            </ul>
+             <figure class="image-container-fullwidth">
+                 <img src="design-system.png" alt="UNT Navigator Design System elements (colors, typography, components)" class="img-general">
+                 <figcaption>Key elements of the UNT Navigator Design System.</figcaption>
+            </figure>
+
+            <h3>Explanation of Design Decisions</h3>
+             <ul>
+                <li>The clean interface with ample white space aims to reduce cognitive load.</li>
+                <li>UNT Green is used strategically for primary actions to draw user attention.</li>
+                <li>Card layouts provide digestible information chunks with clear tap targets.</li>
+                <li>High contrast ratios were considered for text and background combinations (see Accessibility section).</li>
+                <li>Visual feedback (like button states) was incorporated into the prototype.</li>
+             </ul>
+             <p><em>[Add any other specific rationale behind your visual design choices.]</em></p>
+
+            <h3>Final Screens & Key Flows</h3>
+            <p>The following galleries showcase the final look and feel of the UNT Navigator app across its main functions:</p>
+
+             <h4>Login & Onboarding Flow</h4>
+             <div class="image-gallery-scrollable">
+                <img src="login1.png" alt="Final Onboarding screen 1" class="img-gallery-item img-mockup-gallery">
+                <img src="login2.png" alt="Final Canvas Login screen (SSO)" class="img-gallery-item img-mockup-gallery">
+                <img src="login3.png" alt="Final Sync Confirmation screen" class="img-gallery-item img-mockup-gallery">
+             </div>
+
+             <h4>Finding & Navigating to a Class Flow</h4>
+              <div class="image-gallery-scrollable">
+                <img src="final-classnav1.png" alt="Final Class Schedule screen" class="img-gallery-item img-mockup-gallery">
+                <img src="hifi2.png" alt="Final Class Details Screen" class="img-gallery-item img-mockup-gallery"> <!-- Assumed hifi2 is class details -->
+                <img src="final-classnav2.png" alt="Final Map route to class screen" class="img-gallery-item img-mockup-gallery">
+                <img src="final-classnav3.png" alt="Final Turn-by-turn navigation view" class="img-gallery-item img-mockup-gallery">
+             </div>
+
+             <h4>Using "Near Me" with Filters Flow</h4>
+             <div class="image-gallery-scrollable">
+                 <img src="final-nearme1.png" alt="Final Near Me screen with filters" class="img-gallery-item img-mockup-gallery">
+                 <!-- <img src="final-nearme2.png" alt="Final Near Me filters screen" class="img-gallery-item img-mockup-gallery"> --> <!-- This seems redundant if filters are chips -->
+                 <img src="hifi4.png" alt="Final Location Details screen (e.g., Willis Library)" class="img-gallery-item img-mockup-gallery"> <!-- Assumed hifi4 is location detail -->
+                 <img src="final-nearme3.png" alt="Final Near Me results filtered screen (Map View if applicable)" class="img-gallery-item img-mockup-gallery"> <!-- Clarify what this shows -->
+             </div>
+
+             <h4>Finding & Engaging with Events Flow</h4>
+             <div class="image-gallery-scrollable">
+                 <img src="final-event1.png" alt="Final Events List screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="final-event2.png" alt="Final Event Details screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="final-event3.png" alt="Final Event RSVP Confirmation" class="img-gallery-item img-mockup-gallery">
+                 <img src="final-event4.png" alt="Final Event Sharing Options" class="img-gallery-item img-mockup-gallery">
+                 <!-- <img src="final-event5.png" alt="Final Event Add to Calendar (Implied)" class="img-gallery-item img-mockup-gallery"> --> <!-- Need context for this image -->
+             </div>
+
+              <h4>Settings & Account Management Flow (incl. Delete)</h4>
+             <div class="image-gallery-scrollable">
+                 <img src="final-delete1.png" alt="Final Settings main screen" class="img-gallery-item img-mockup-gallery">
+                 <img src="final-delete2.png" alt="Final Appearance settings screen (placeholder)" class="img-gallery-item img-mockup-gallery"> <!-- Needs actual appearance screen if available -->
+                 <img src="final-delete3.png" alt="Final App in Dark Mode screen (placeholder)" class="img-gallery-item img-mockup-gallery"> <!-- Needs actual dark mode screen -->
+                 <img src="hifi12.png" alt="Final Delete Account Screen" class="img-gallery-item img-mockup-gallery"> <!-- Showing delete flow -->
+                 <img src="hifi13.png" alt="Final Delete Confirmation Modal" class="img-gallery-item img-mockup-gallery"> <!-- Showing delete flow -->
+             </div>
+
+             <!-- Optional: Include a gallery for general Hi-Fi screens if needed -->
+             <!-- <h3>Selected High-Fidelity Screens</h3>
+             <div class="image-gallery-scrollable">
+                 <img src="hifi1.png" alt="High-fidelity mockup screen 1 - Map" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi3.png" alt="High-fidelity mockup screen 3 - Near Me List" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi5.png" alt="High-fidelity mockup screen 5 - Classes List" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi6.png" alt="High-fidelity mockup screen 6 - Events List" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi7.png" alt="High-fidelity mockup screen 7 - Settings" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi8.png" alt="High-fidelity mockup screen 8 - Canvas Integration Status" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi9.png" alt="High-fidelity mockup screen 9 - Account Settings (placeholder)" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi10.png" alt="High-fidelity mockup screen 10 - Help & Support (placeholder)" class="img-gallery-item img-mockup-gallery">
+                 <img src="hifi11.png" alt="High-fidelity mockup screen 11 - About Screen (placeholder)" class="img-gallery-item img-mockup-gallery">
+             </div> -->
+
+
+            <h3>Interactive Prototype</h3>
+            <p>Explore the final high-fidelity prototype to experience the key user flows:</p>
+            <!-- Embed Figma Prototype -->
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="850" src="https://embed.figma.com/proto/lfauxa4vKHuUOrgNKYZYsf/Final-UNT-Nav-Prototype?m=dev&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=1-3&starting-point-node-id=1%3A3&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            <p class="caption" style="text-align: left; margin-top: 10px;"><a href="https://www.figma.com/proto/lfauxa4vKHuUOrgNKYZYsf/Final-UNT-Nav-Prototype?page-id=0%3A1&node-id=1-3&viewport=534%2C399%2C0.2&scaling=min-zoom&starting-point-node-id=1%3A3&show-proto-sidebar=1" target="_blank" class="button">View Prototype in Figma</a></p>
+
+        </section>
+
+        <!-- 11. Accessibility Considerations (Week 13) -->
+        <section id="accessibility" class="content-section fade-in-element">
+            <h2>11. Accessibility Considerations</h2>
+            <p>We aimed to incorporate accessibility best practices to ensure UNT Navigator could be used by a wider range of students, including those with disabilities.</p>
+
+            <h3>What accessibility guidelines did you follow?</h3>
+            <p>We primarily considered principles from the **Web Content Accessibility Guidelines (WCAG) 2.1**, focusing on AA level conformance where feasible within the scope of a student project. Key areas included Perceivability, Operability, Understandability, and Robustness.</p>
+             <p><em>[Be specific if you targeted particular guidelines or used accessibility checking tools.]</em></p>
+
+            <h3>Specific Design Decisions Made to Be Inclusive</h3>
+            <ul>
+                <li><strong>Color Contrast:</strong> We checked color combinations, particularly text on backgrounds and interactive elements against their surroundings, aiming for at least a 4.5:1 contrast ratio for normal text and 3:1 for large text and UI components (WCAG 1.4.3 & 1.4.11). The use of UNT Green (`#00853E`) on white provides good contrast.</li>
+                 <li><strong>Clear Typography:</strong> Chose 'Inter', a sans-serif font known for good legibility. Used adequate font sizes (minimum 16px for body text generally) and line spacing to aid readability (WCAG 1.4.12 - Text Spacing - considered).</li>
+                <li><strong>Focus Indicators:</strong> Ensured interactive elements (buttons, links, form fields) would have visible focus indicators when navigating via keyboard or assistive technology (though full implementation depends on development) (WCAG 2.4.7).</li>
+                <li><strong>Alternative Text (Consideration):</strong> While primarily visual, for key images conveying information (like map icons or event posters), we planned for alternative text descriptions to be added during development (WCAG 1.1.1).</li>
+                <li><strong>Touch Target Size:</strong> Designed buttons and interactive list items with sufficient padding to create touch targets of adequate size (aiming for closer to 44x44 CSS pixels where possible) (Related to WCAG 2.5.5 - Target Size).</li>
+                 <li><strong>Layout Predictability:</strong> Maintained consistent layout structures and navigation patterns to make the interface predictable for users of screen readers or magnifiers (WCAG 3.2.3 - Consistent Navigation).</li>
+                 <li><strong>Appearance Options:</strong> Included placeholders for Light/Dark/High Contrast modes in the settings, acknowledging the need for user customization (WCAG 1.4.8 - Visual Presentation - providing options).</li>
+            </ul>
+            <p><em>[Note: Adapt these points to reflect the specific actions and considerations *you actually took*. Be honest about the extent to which accessibility was addressed in this project phase.]</em></p>
+        </section>
+
+        <!-- 12. Reflection & Learnings -->
+        <section id="reflection-learnings" class="content-section fade-in-element">
+            <h2>12. Reflection & Learnings</h2>
+            <h3>What worked well in our process?</h3>
+            <ul>
+                <li>Starting with user research (interviews) was crucial for validating the problem and understanding user needs before jumping to solutions.</li>
+                <li>Rapid ideation techniques (Crazy 8s) helped generate diverse ideas quickly and avoid getting stuck on initial concepts.</li>
+                <li>The iterative cycle of prototyping (low-fi to hi-fi) and usability testing provided invaluable feedback that directly shaped and improved the final design. Seeing users interact with the prototype highlighted issues we hadn't anticipated.</li>
+                <li>Establishing a basic design system before prototyping helped maintain visual consistency and sped up the high-fidelity design phase.</li>
+                 <li>Working collaboratively allowed us to leverage different perspectives and skills.</li>
+            </ul>
+
+            <h3>What would you do differently?</h3>
+            <ul>
+                <li>Conduct more rounds of usability testing, perhaps earlier with low-fidelity wireframes, to catch fundamental structural issues sooner.</li>
+                <li>Involve students with disabilities in usability testing to get direct feedback on accessibility features.</li>
+                <li>Define the success metrics more rigorously at the project's outset and plan how to measure them more concretely.</li>
+                <li>Explore indoor mapping capabilities more deeply during the research phase, as this was a frequently mentioned desire but technically complex.</li>
+            </ul>
+
+            <h3>What did you learn about UX and teamwork?</h3>
+            <ul>
+                <li>Learned the practical application of the UX design process, from research synthesis to iterative design and testing.</li>
+                <li>Gained a deeper appreciation for user-centered design – constantly asking "Who are we designing for?" and "Does this meet their needs?".</li>
+                 <li>Understood the importance of clear communication and role definition within a team to ensure everyone contributes effectively and stays aligned.</li>
+                 <li>Experienced the challenge and reward of synthesizing feedback (from users and team members) into design decisions.</li>
+                <li>Recognized that UX design is an ongoing process of learning, iterating, and improving, and rarely perfect on the first try.</li>
+            </ul>
+        </section>
+
+        <!-- 13. Team Credits -->
+        <section id="team-credits" class="content-section fade-in-element">
+            <h2>13. Team Credits</h2>
+            <p>This project was a collaborative effort by the following team members:</p>
+            <ul>
+                <li><strong>Rowland Foster:</strong> Developed prototypes, design system and contributed to ideation and UX interviews.</li>
+                <li><strong>Abyan Huq:</strong> Facilitated ideation sessions, created user persona, and contributed to wireframing.</li>
+                <li><strong>Rishav Dahal:</strong> Conducted UX interviews, usability testing sessions, and contributed to high-fidelity prototypes.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="container fade-in-element">
+            <p>Thank you for viewing this UX Portfolio!</p>
+            <!-- Update Course Name and Semester/Year -->
+            <p>Developed for CSCE 3220 - Spring 2025</p>
+            <!-- Optional: Links to LinkedIn, Portfolio Site etc. -->
+            <!-- <p><a href="#">LinkedIn</a> | <a href="#">Portfolio</a></p> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
